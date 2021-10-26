@@ -17,6 +17,7 @@ android {
         versionName "1.0"
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary=true
 
         //for NDK
         externalNativeBuild{
@@ -180,6 +181,8 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.8'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 
+    implementation 'com.squareup.retrofit2:converter-scalars:2.3.0'
+
     //------------------------------------------------------------------
     //Picasso
     implementation 'com.squareup.picasso:picasso:2.71828'
@@ -199,6 +202,11 @@ dependencies {
     //Hilt
     implementation("com.google.dagger:hilt-android:2.38.1")
     kapt("com.google.dagger:hilt-android-compiler:2.38.1")
+
+    //----------------------------------------------------------------
+
+    //Klaxon for parsing Json in kotlin
+    implementation 'com.beust:klaxon:5.5'
 
 
 }

@@ -16,9 +16,6 @@ class MyApplication : Application() {
         fun getMyappContext(): Context {
             return appContext.applicationContext
         }
-
-
-
     }
 
 
