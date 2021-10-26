@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.tispunshahryar960103.digishop.ui.main.home.HomeFragment"
+        android:label="HomeFragment" />
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="com.tispunshahryar960103.digishop.ui.main.category.CategoriesFragment"
+        android:label="CategoriesFragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.tispunshahryar960103.digishop.ui.main.profile.ProfileFragment"
+        android:label="ProfileFragment" />
+    <fragment
+        android:id="@+id/shoppingCartFragment"
+        android:name="com.tispunshahryar960103.digishop.ui.main.cart.ShoppingCartFragment"
+        android:label="ShoppingCartFragment" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.tispunshahryar960103.digishop.ui.loginMVP.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+</navigation>
