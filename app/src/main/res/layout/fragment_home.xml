@@ -9,7 +9,8 @@
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/_50sdp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -42,8 +43,12 @@
                 android:id="@+id/txt_special"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+
                 android:text="@string/special_suggests"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/toolbar_background"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.96"
                 app:layout_constraintStart_toStartOf="parent"
@@ -104,7 +109,10 @@
                 android:id="@+id/txt_offer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_16sdp"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/toolbar_background"
                 android:text="@string/offers"
                 app:layout_constraintEnd_toStartOf="@+id/guideline3"
                 app:layout_constraintHorizontal_bias="1.0"
@@ -122,8 +130,11 @@
                 android:id="@+id/recyclerView_offer"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_8sdp"
                 android:layout_marginEnd="0dp"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/toolbar_background"
                 app:layout_constraintEnd_toStartOf="@+id/guideline3"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txt_offer" />
@@ -132,7 +143,10 @@
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_16sdp"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/toolbar_background"
                 android:text="@string/selection_makeup"
                 app:layout_constraintEnd_toStartOf="@+id/guideline3"
                 app:layout_constraintHorizontal_bias="1.0"
@@ -141,6 +155,10 @@
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerView_selection_makeup"
+                android:textStyle="bold"
+                android:textSize="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintEnd_toStartOf="@+id/guideline3"

@@ -16,4 +16,6 @@
     <string name="special_suggests">پیشنهادهای ویژه</string>
     <string name="offers">تخفیفات دیجی شاپ</string>
     <string name="selection_makeup">منتخب آرایشی و بهداشتی</string>
+    <string name="error_message">خطا در برقراری با سرور!</string>
+    <string name="brand">برند :</string>
 </resources>

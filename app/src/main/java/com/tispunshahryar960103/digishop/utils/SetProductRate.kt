@@ -7,6 +7,7 @@ import androidx.databinding.BindingAdapter
 object SetProductRate {
 
     @BindingAdapter("bind:setRate")
+    @JvmStatic
     fun setRate(ratingBar: AppCompatRatingBar,rate:String){
 
         ratingBar.rating=rate.toFloat()

@@ -11,7 +11,38 @@ import retrofit2.Callback
 import retrofit2.Response
 import javax.inject.Inject
 
+
 class WebServiceCaller @Inject constructor(private val iDigiService: IDigiService/*, private val iMessageResponseListener: IMessageResponseListener<Any>*/){
+
+
+
+
+/*    fun getHomeData(iMessageListenerTT: IMessageListenerTT){
+
+
+        val baseModelCall:Call<BaseModel> =iDigiService.getHomeData()
+
+        baseModelCall.enqueue(object: Callback<BaseModel>{
+            override fun onResponse(call: Call<BaseModel>, response: Response<BaseModel>) {
+                Log.e("", "" )
+                iMessageListenerTT.onSuccesss(response.body())
+                Toast.makeText(MyApplication.appContext, "WebServiceCaller", Toast.LENGTH_SHORT).show()
+
+            }
+
+            override fun onFailure(call: Call<BaseModel>, t: Throwable) {
+                Log.e("", "" )
+                iMessageListenerTT.onErrorr(t.toString())
+            }
+
+        })
+
+
+    }*/
+
+
+
+
 
 
 
@@ -22,7 +53,7 @@ class WebServiceCaller @Inject constructor(private val iDigiService: IDigiServic
         baseModelCall.enqueue(object: Callback<BaseModel>{
             override fun onResponse(call: Call<BaseModel>, response: Response<BaseModel>) {
                 Log.e("", "" )
-                iMessageResponseListener.onSuccesss(response.body().toString())
+                response.body()?.let { iMessageResponseListener.onSuccesss(it) }
                 Toast.makeText(MyApplication.appContext, "WebServiceCaller", Toast.LENGTH_SHORT).show()
 
             }
